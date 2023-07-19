@@ -1,39 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-  </head>
-  <body>
-    <div class="container">
-    <h1 class="text-center">FRAMEWORK DE CSS-BOOTSTRAP</h1>
-    <p>
-        Bootstrap es un framework CSS utilizado en aplicaciones front-end — es decir, en la pantalla de interfaz con el usuario— para desarrollar aplicaciones que se adaptan a cualquier dispositivo.
-        
-        En WordPress, por ejemplo, puede instalarse como tema o usarse para el desarrollo de plugins o, incluso, dentro de ellos para estilizar sus funciones. El propósito del framework es ofrecerle al usuario una experiencia más agradable cuando navega en un sitio.
-        
-        Por esta razón, tiene varios recursos para configurar los estilos de los elementos de la página de una manera simple y eficiente, además de facilitar la construcción de páginas que, al mismo tiempo, están adaptadas para la web y para dispositivos móviles.
-        
-        Lo anterior demuestra por qué es importante conocer una estructura potencial de este tipo.
-        
-        Con eso en mente, elaboramos esta guía completa para principiantes. ¡Continúa leyendo!
-        
-        ¿Qué es Bootstrap?
-        Bootstrap es un framework CSS desarrollado por Twitter en 2010, para estandarizar las herramientas de la compañía.
-        
-        Inicialmente, se llamó Twitter Blueprint y, un poco más tarde, en 2011, se transformó en código abierto y su nombre cambió para Bootstrap. Desde entonces fue actualizado varias veces y ya se encuentra en la versión 4.4.
-        
-        El framework combina CSS y JavaScript para estilizar los elementos de una página HTML. Permite mucho más que, simplemente, cambiar el color de los botones y los enlaces.
-        
-        Esta es una herramienta que proporciona interactividad en la página, por lo que ofrece una serie de componentes que facilitan la comunicación con el usuario, como menús de navegación, controles de página, barras de progreso y más.
-        
-        Además de todas las características que ofrece el framework, su principal objetivo es permitir la construcción de sitios web responsive para dispositivos móviles.
-        
-        Esto significa que las páginas están diseñadas para funcionar en desktop, tablets y smartphones, de una manera muy simple y organizada.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina demo</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <!--Inicio de Menú-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Fin de Menú-->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Img/banner.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Img/banner2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Img/banner3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Fin de carrusel de imagenes-->
+  <!--INICIO DE CONTENIDO-->
+  <div class="row">
+    <div class="col-md-5 col-4">
+  <hr>
+    </div>
+      <div class="col-md-2 col-6">
+          <h1 class="text-center"> PAISAJES </h1>
+      </div>
+      <div class="col-md-5 col-2">
+          <hr>
+      </div>
+      </div>
+    
+
+      <!--fin de contenido-->
+      <br>
+<!--Inicio de 3 fotos -->
+<div class="row">
+  <div class=" col-md-2 ">
+  </div>
+
+  <div class=" col-md-3 text-center col-4">
+  <img src="Img/paisaje2.jpg" class="img-thumbnail rounded-circle" alt="...">
+<h6>Cualquier paisaje es un estado del espíritu.</h6></div>
+
+  <div class=" col-md-3 text-center col-4 " >
+      <img src="Img/paisaje3.jpg" class="img-thumbnail rounded-circle" alt="...">
+      <h6>Toda la jardinería es pintura de paisajes.</h6></div>
+
+      <div class=" col-md-3 text-center col-4" >
+          <img src="Img/paisaje4.jpg" class="img-thumbnail rounded-circle" alt="...">
+          <h6> Nuestra mirada “hace” el paisaje, lo crea. </h6></div>
+      
+</div>
+<div class=" col-md-2">
+</div>
+</div>
+<!--fin de 3 fotos-->
+<!--Inicio de Cards-->
+<br>
+<div class="row">
+  <div class=" col-md-2 col-6 ">
+      
+          <img src="Img/paises.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+        <div class=" col-md-2 col-6 ">
+         
+              <img src="Img/paises2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+  </div>
+    </div>
+    <!--Fin de Cards-->
+ 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
